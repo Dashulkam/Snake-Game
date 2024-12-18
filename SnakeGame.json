@@ -1,0 +1,37 @@
+[
+  {
+    "HighScore": 160,
+    "PlayerName": "1",
+    "DifficultyLevel": "Easy"
+  },
+  {
+    "HighScore": 20,
+    "PlayerName": "2",
+    "DifficultyLevel": "Medium"
+  },
+  {
+    "HighScore": 20,
+    "PlayerName": "3",
+    "DifficultyLevel": "Hard"
+  },
+  {
+    "HighScore": 10,
+    "PlayerName": "4",
+    "DifficultyLevel": "Hard"
+  },
+  {
+    "HighScore": 60,
+    "PlayerName": "5",
+    "DifficultyLevel": "Medium"
+  },
+  {
+    "HighScore": 40,
+    "PlayerName": "к",
+    "DifficultyLevel": "Easy"
+  },
+  {
+    "HighScore": 30,
+    "PlayerName": "g",
+    "DifficultyLevel": "Easy"
+  }
+]

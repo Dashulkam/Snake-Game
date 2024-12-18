@@ -1,0 +1,29 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av" x:Class="SnakeGame.MainWindow"
+        Title="Snake Game" Height="450" Width="600"
+        KeyDown="MainWindow_KeyDown">
+    <Grid>
+        <Canvas x:Name="GameCanvas" Background="Black" Width="400" Height="400" 
+                HorizontalAlignment="Left" VerticalAlignment="Center" Margin="178,0,0,0"/>
+        <StackPanel Margin="10,32,448,225" Orientation="Vertical">
+            <Button x:Name="StartButton" Content="Старт" Width="100" Height="50" Click="StartButton_Click" />
+            <Label x:Name="ScoreLabel" Content="Score: 0" FontSize="16" Height="30" Width="75"/>
+            <RadioButton x:Name="EasyLevel" Content="Легкий уровень" Height="25" Width="127"/>
+            <RadioButton x:Name="MediumLevel" Content="Средний уровень" Height="25" Width="127"/>
+            <RadioButton x:Name="HardLevel" Content="Сложный уровень" Height="21" Width="127"/>
+        </StackPanel>
+        <Label Content="Введите имя игрока:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,220,0,0"/>
+        <TextBox x:Name="PlayerNameTextBox" Width="110" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,251,0,0"/>
+        <DataGrid  SelectionChanged="DataGrid_SelectionChanged" Margin="0,282,427,17" x:Name="DatagradHighScore">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Игрок" Binding="{Binding Path=PlayerName}" Width="50" />
+                <DataGridHyperlinkColumn Header="Рекорд" Binding="{Binding Path=Record}" Width="50" />
+                <DataGridTextColumn Header="Уровень" Binding="{Binding Path=DifficultyLevel}" Width="50" />
+            </DataGrid.Columns>
+
+        </DataGrid>
+    </Grid>
+</Window>
